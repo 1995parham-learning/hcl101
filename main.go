@@ -22,8 +22,8 @@ var schemas = map[string]*hcl.BodySchema{
 	},
 	"person": {
 		Attributes: []hcl.AttributeSchema{
-			{Name: "date"},
-			{Name: "birthday"},
+			{Name: "date", Required: true},
+			{Name: "birthday", Required: true},
 		},
 	},
 }
